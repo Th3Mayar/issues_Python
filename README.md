@@ -1,23 +1,23 @@
 ### Issue 1: Modified FizzBuzz
-#### Función: `fizz_buzz_mod(n)`
-**Descripción:**
-Esta función genera una lista de números del 1 al `n`, pero con modificaciones:
-- Si el número es múltiplo de 3, se reemplaza por `"Fizz"`.
-- Si el número es múltiplo de 5, se reemplaza por `"Buzz"`.
-- Si el número es múltiplo de 3 y 5, se reemplaza por `"FizzBuzz"`.
-- Si el número no es múltiplo de 3 ni de 5, se mantiene el número.
+#### Function: `fizz_buzz_mod(n)`
+**Description:**
+This function generates a list of numbers from 1 to `n`, with the following modifications:
+- If the number is a multiple of 3, it is replaced by `"Fizz"`.
+- If the number is a multiple of 5, it is replaced by `"Buzz"`.
+- If the number is a multiple of both 3 and 5, it is replaced by `"FizzBuzz"`.
+- If the number is neither a multiple of 3 nor 5, the number itself is included in the list.
 
-**Parámetros:**
-- `n` (int): Un número entero positivo que define el límite superior de la lista.
+**Parameters:**
+- `n` (int): A positive integer that defines the upper limit of the list.
 
-**Retorno:**
-- Una lista con números y cadenas según las reglas de FizzBuzz.
+**Return:**
+- A list containing numbers and strings according to FizzBuzz rules.
 
-**Ejemplo de uso:**
+**Usage Example:**
 ```python
 fizz_buzz_mod(15)
 ```
-Salida:
+Output:
 ```python
 [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
 ```
@@ -25,21 +25,21 @@ Salida:
 ---
 
 ### Issue 2: Find the Second Longest Word
-#### Función: `segunda_palabra_mas_larga(texto)`
-**Descripción:**
-Esta función devuelve la segunda palabra más larga en una cadena de texto. Si hay varias palabras con la misma longitud, devuelve la que aparezca primero en el texto. Si solo hay una palabra, devuelve esa palabra.
+#### Function: `segunda_palabra_mas_larga(texto)`
+**Description:**
+This function returns the second longest word in a string. If multiple words have the same length, it returns the one that appears first in the string. If there is only one word, it returns that word.
 
-**Parámetros:**
-- `texto` (str): Una cadena de texto que contiene varias palabras separadas por espacios.
+**Parameters:**
+- `texto` (str): A string containing several words separated by spaces.
 
-**Retorno:**
-- Una cadena de texto que representa la segunda palabra más larga en la cadena.
+**Return:**
+- A string representing the second longest word in the text.
 
-**Ejemplo de uso:**
+**Usage Example:**
 ```python
 segunda_palabra_mas_larga("In programming, practice makes perfect")
 ```
-Salida:
+Output:
 ```python
 'practice'
 ```
@@ -47,17 +47,17 @@ Salida:
 ---
 
 ### Issue 3: Adding Submatrices of a Matrix
-#### Función: `sumar_submatrices(matriz)`
-**Descripción:**
-Esta función calcula las sumas de todas las posibles submatrices cuadradas de una matriz dada. Considera submatrices de diferentes tamaños (desde 1x1 hasta `n x n`), y devuelve una lista con las sumas de estas submatrices.
+#### Function: `sumar_submatrices(matriz)`
+**Description:**
+This function calculates the sums of all possible square submatrices within a given matrix. It considers submatrices of different sizes (from 1x1 to `n x n`), and returns a list with the sums of these submatrices.
 
-**Parámetros:**
-- `matriz` (list of lists): Una matriz cuadrada `n x n` de números enteros.
+**Parameters:**
+- `matriz` (list of lists): A square `n x n` matrix of integers.
 
-**Retorno:**
-- Una lista que contiene las sumas de todas las submatrices posibles dentro de la matriz.
+**Return:**
+- A list containing the sums of all possible submatrices within the matrix.
 
-**Ejemplo de uso:**
+**Usage Example:**
 ```python
 matriz = [
     [1, 2, 3],
@@ -66,16 +66,16 @@ matriz = [
 ]
 sumar_submatrices(matriz)
 ```
-Salida:
+Output:
 ```python
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 16, 24, 28, 45]
 ```
 
 ---
 
-### Ejecución de Ejemplos
+### Example Execution
 
-**Ejemplo de ejecución:**
+**Execution Example:**
 ```python
 fizzbuzz_result = fizz_buzz_mod(15)
 segunda_palabra_result = segunda_palabra_mas_larga("In programming, practice makes perfect")
@@ -95,5 +95,3 @@ print(segunda_palabra_result)
 print("\nIssue 3: Submatrix sums")
 print(submatrices_result)
 ```
-
----
